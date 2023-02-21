@@ -1,0 +1,7 @@
+*.pyc
+*~
+/*
+!/addons/
+/addons/*
+!/addons/test_agreement/
+!.gitignore
