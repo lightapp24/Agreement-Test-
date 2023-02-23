@@ -1,0 +1,425 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* test_agreement
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-23 13:06+0000\n"
+"PO-Revision-Date: 2023-02-23 13:06+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: test_agreement
+#: model:mail.template,body_html:test_agreement.test_agreement_revision_msg
+msgid ""
+"<p style=\"margin:0px;box-sizing:border-box;font-size:13px;\">\n"
+"Agreement <t t-out=\"object.number or ''\" data-oe-t-inline=\"true\" contenteditable=\"false\">Number</t> Sent For Revision.\n"
+"</p>"
+msgstr ""
+"<p style=\"margin:0px;box-sizing:border-box;font-size:13px;\">\n"
+"Договор <t t-out=\"object.number or ''\" data-oe-t-inline=\"true\" contenteditable=\"false\">Number</t> отправлен на доработку.\n"
+"</p>"
+
+#. module: test_agreement
+#: model:ir.model.constraint,message:test_agreement.constraint_test_kind_agreement_uniq_name
+msgid ""
+"A Kind Of Agreement already exists with this name. Name must be unique!"
+msgstr "Тип договора с таким названием уже существует. Имя должно быть уникальным!"
+
+#. module: test_agreement
+#: model:ir.model.constraint,message:test_agreement.constraint_test_agreement_uniq_number
+msgid "A Number Of Agreement already exists."
+msgstr "Номер договора уже существует."
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement__message_needaction
+#: model:ir.model.fields,field_description:test_agreement.field_test_kind_agreement__message_needaction
+msgid "Action Needed"
+msgstr "Требуется действие"
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_kind_agreement__active
+#: model:ir.model.fields.selection,name:test_agreement.selection__test_agreement__state__active
+msgid "Active"
+msgstr "Активен"
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement__activity_ids
+#: model:ir.model.fields,field_description:test_agreement.field_test_kind_agreement__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement__activity_exception_decoration
+#: model:ir.model.fields,field_description:test_agreement.field_test_kind_agreement__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement__activity_state
+#: model:ir.model.fields,field_description:test_agreement.field_test_kind_agreement__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement__activity_type_icon
+#: model:ir.model.fields,field_description:test_agreement.field_test_kind_agreement__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: test_agreement
+#: model:ir.actions.act_window,name:test_agreement.action_agreement
+#: model:ir.ui.menu,name:test_agreement.menu_agreement
+msgid "Agreement"
+msgstr "Договор"
+
+#. module: test_agreement
+#: model:mail.template,name:test_agreement.test_agreement_revision_msg
+msgid "Agreement Revision Message"
+msgstr "Сообщение о доработке соглашения"
+
+#. module: test_agreement
+#: model:ir.ui.menu,name:test_agreement.test_agreement_main_menu
+msgid "Agreements"
+msgstr "Договоры"
+
+#. module: test_agreement
+#: model_terms:ir.ui.view,arch_db:test_agreement.agreement_form
+msgid "Approval"
+msgstr "Согласовать"
+
+#. module: test_agreement
+#: model:ir.model.fields.selection,name:test_agreement.selection__test_agreement__state__approval
+msgid "Approval In Progress"
+msgstr "На согласовании"
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement__message_attachment_count
+#: model:ir.model.fields,field_description:test_agreement.field_test_kind_agreement__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement__author_id
+msgid "Author"
+msgstr "Автор"
+
+#. module: test_agreement
+#: model:ir.model.fields.selection,name:test_agreement.selection__test_agreement__state__completed
+msgid "Completed"
+msgstr "Завершен"
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement__create_uid
+#: model:ir.model.fields,field_description:test_agreement.field_test_kind_agreement__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement__create_date
+#: model:ir.model.fields,field_description:test_agreement.field_test_kind_agreement__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement__display_name
+#: model:ir.model.fields,field_description:test_agreement.field_test_kind_agreement__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: test_agreement
+#: model:ir.model.fields.selection,name:test_agreement.selection__test_agreement__state__draft
+msgid "Draft"
+msgstr "Черновик"
+
+#. module: test_agreement
+#: model:res.groups,name:test_agreement.employee_group_access
+msgid "Employee"
+msgstr "Сотрудник"
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement__end_date
+msgid "End Date"
+msgstr "Дата завершения"
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement__message_follower_ids
+#: model:ir.model.fields,field_description:test_agreement.field_test_kind_agreement__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement__message_partner_ids
+#: model:ir.model.fields,field_description:test_agreement.field_test_kind_agreement__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: test_agreement
+#: model:ir.model.fields,help:test_agreement.field_test_agreement__activity_type_icon
+#: model:ir.model.fields,help:test_agreement.field_test_kind_agreement__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: test_agreement
+#: model_terms:ir.ui.view,arch_db:test_agreement.agreement_search
+msgid "Group By"
+msgstr "Группа по"
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement__has_message
+#: model:ir.model.fields,field_description:test_agreement.field_test_kind_agreement__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: test_agreement
+#: model:res.groups,name:test_agreement.head_group_access
+msgid "Head"
+msgstr "Руководитель"
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement__id
+#: model:ir.model.fields,field_description:test_agreement.field_test_kind_agreement__id
+msgid "ID"
+msgstr "ИД"
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement__activity_exception_icon
+#: model:ir.model.fields,field_description:test_agreement.field_test_kind_agreement__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: test_agreement
+#: model:ir.model.fields,help:test_agreement.field_test_agreement__activity_exception_icon
+#: model:ir.model.fields,help:test_agreement.field_test_kind_agreement__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: test_agreement
+#: model:ir.model.fields,help:test_agreement.field_test_agreement__message_needaction
+#: model:ir.model.fields,help:test_agreement.field_test_agreement__message_unread
+#: model:ir.model.fields,help:test_agreement.field_test_kind_agreement__message_needaction
+#: model:ir.model.fields,help:test_agreement.field_test_kind_agreement__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: test_agreement
+#: model:ir.model.fields,help:test_agreement.field_test_agreement__message_has_error
+#: model:ir.model.fields,help:test_agreement.field_test_kind_agreement__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement__message_is_follower
+#: model:ir.model.fields,field_description:test_agreement.field_test_kind_agreement__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: test_agreement
+#: model:ir.actions.act_window,name:test_agreement.action_kind_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement__kind_id
+#: model:ir.ui.menu,name:test_agreement.menu_kind_agreement
+msgid "Kind Of Agreement"
+msgstr "Виды договоров"
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement____last_update
+#: model:ir.model.fields,field_description:test_agreement.field_test_kind_agreement____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement__write_uid
+#: model:ir.model.fields,field_description:test_agreement.field_test_kind_agreement__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement__write_date
+#: model:ir.model.fields,field_description:test_agreement.field_test_kind_agreement__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement__message_main_attachment_id
+#: model:ir.model.fields,field_description:test_agreement.field_test_kind_agreement__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement__message_has_error
+#: model:ir.model.fields,field_description:test_agreement.field_test_kind_agreement__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement__message_ids
+#: model:ir.model.fields,field_description:test_agreement.field_test_kind_agreement__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: test_agreement
+#: model:ir.actions.server,name:test_agreement.backup_scheduler_ir_actions_server
+#: model:ir.cron,cron_name:test_agreement.backup_scheduler
+#: model:ir.cron,name:test_agreement.backup_scheduler
+msgid "Move Old Agreements To Completed"
+msgstr "Переместить старые договоры в завершенные"
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement__my_activity_date_deadline
+#: model:ir.model.fields,field_description:test_agreement.field_test_kind_agreement__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_kind_agreement__name
+msgid "Name"
+msgstr "Название"
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement__activity_date_deadline
+#: model:ir.model.fields,field_description:test_agreement.field_test_kind_agreement__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement__activity_summary
+#: model:ir.model.fields,field_description:test_agreement.field_test_kind_agreement__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement__activity_type_id
+#: model:ir.model.fields,field_description:test_agreement.field_test_kind_agreement__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement__number
+msgid "Number"
+msgstr "Номер"
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement__message_needaction_counter
+#: model:ir.model.fields,field_description:test_agreement.field_test_kind_agreement__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement__message_has_error_counter
+#: model:ir.model.fields,field_description:test_agreement.field_test_kind_agreement__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: test_agreement
+#: model:ir.model.fields,help:test_agreement.field_test_agreement__message_needaction_counter
+#: model:ir.model.fields,help:test_agreement.field_test_kind_agreement__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: test_agreement
+#: model:ir.model.fields,help:test_agreement.field_test_agreement__message_has_error_counter
+#: model:ir.model.fields,help:test_agreement.field_test_kind_agreement__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: test_agreement
+#: model:ir.model.fields,help:test_agreement.field_test_agreement__message_unread_counter
+#: model:ir.model.fields,help:test_agreement.field_test_kind_agreement__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement__partner_id
+msgid "Partner"
+msgstr "Клиент"
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement__activity_user_id
+#: model:ir.model.fields,field_description:test_agreement.field_test_kind_agreement__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: test_agreement
+#: model_terms:ir.ui.view,arch_db:test_agreement.kind_agreement_search
+msgid "Search By Name"
+msgstr "Поиск по имени"
+
+#. module: test_agreement
+#: model_terms:ir.ui.view,arch_db:test_agreement.agreement_search
+msgid "Search By Number"
+msgstr "Поиск по номеру"
+
+#. module: test_agreement
+#: model_terms:ir.ui.view,arch_db:test_agreement.agreement_form
+msgid "Send For Approval"
+msgstr "Отправить на согласование"
+
+#. module: test_agreement
+#: model_terms:ir.ui.view,arch_db:test_agreement.agreement_form
+msgid "Send For Revision"
+msgstr "Отправить на доработку"
+
+#. module: test_agreement
+#: model:mail.template,subject:test_agreement.test_agreement_revision_msg
+msgid "Sent For Revision"
+msgstr "Отправлено на доработку"
+
+#. module: test_agreement
+#: model:ir.ui.menu,name:test_agreement.menu_settings
+msgid "Settings"
+msgstr "Настройки"
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement__start_date
+msgid "Start Date"
+msgstr "Дата начала"
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement__state
+#: model_terms:ir.ui.view,arch_db:test_agreement.agreement_search
+msgid "State"
+msgstr "Статус"
+
+#. module: test_agreement
+#: model:ir.model.fields,help:test_agreement.field_test_agreement__activity_state
+#: model:ir.model.fields,help:test_agreement.field_test_kind_agreement__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: test_agreement
+#: model:ir.model.fields,help:test_agreement.field_test_agreement__activity_exception_decoration
+#: model:ir.model.fields,help:test_agreement.field_test_kind_agreement__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement__message_unread
+#: model:ir.model.fields,field_description:test_agreement.field_test_kind_agreement__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: test_agreement
+#: model:ir.model.fields,field_description:test_agreement.field_test_agreement__message_unread_counter
+#: model:ir.model.fields,field_description:test_agreement.field_test_kind_agreement__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: test_agreement
+#: model:ir.model,name:test_agreement.model_test_agreement
+msgid "test.agreement"
+msgstr ""
+
+#. module: test_agreement
+#: model:ir.model,name:test_agreement.model_test_kind_agreement
+msgid "test.kind_agreement"
+msgstr ""

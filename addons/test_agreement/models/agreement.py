@@ -32,7 +32,7 @@ class Agreement(models.Model):
     _inherit = ['mail.thread', 'mail.activity.mixin']
 
     _sql_constraints = [
-        ('uniq_number', 'unique(number)', "A Number Of Agreement already exists with this name."),
+        ('uniq_number', 'unique(number)', "A Number Of Agreement already exists."),
     ]
 
     @api.model
