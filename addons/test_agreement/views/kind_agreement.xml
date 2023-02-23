@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2023 Plotnikov S.E.
+  ~ All rights reserved.
+  ~
+  -->
+
+<odoo>
+    <data>
+
+        <record id="action_kind_agreement" model="ir.actions.act_window">
+            <field name="name">Kind Of Agreement</field>
+            <field name="res_model">test.kind_agreement</field>
+        </record>
+
+        <record id="kind_agreement_form" model="ir.ui.view">
+            <field name="name">Kind Of Agreement</field>
+            <field name="model">test.kind_agreement</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <label for="name" class="oe_edit_only"/>
+                        <h1>
+                            <field name="name"/>
+                        </h1>
+                        <group>
+                            <field name="active"/>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" groups="base.group_user"/>
+                        <field name="activity_ids"/>
+                        <field name="message_ids"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="kind_agreement_list" model="ir.ui.view">
+            <field name="name">Kind Of Agreement</field>
+            <field name="model">test.kind_agreement</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="kind_agreement_search" model="ir.ui.view">
+            <field name="name">Kind Of Agreement</field>
+            <field name="model">test.kind_agreement</field>
+            <field name="arch" type="xml">
+                <search string="Search By Name">
+                    <field name="name"/>
+                </search>
+            </field>
+        </record>
+
+        <menuitem id="menu_kind_agreement" name="Kind Of Agreement"
+                  parent="menu_settings"
+                  action="action_kind_agreement"/>
+
+    </data>
+</odoo>

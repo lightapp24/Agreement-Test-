@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2023 Plotnikov S.E.
+  ~ All rights reserved.
+  ~
+  -->
+
+<odoo>
+    <data>
+        <record id="backup_scheduler" model="ir.cron">
+            <field name="code">model.move_old_record_to_completed()</field>
+            <field name="interval_type">days</field>
+            <field name="name">Move Old Agreements To Completed</field>
+            <field name="numbercall">-1</field>
+            <field name="priority">5</field>
+            <field name="doall">False</field>
+            <field name="active">True</field>
+            <field name="interval_number">1</field>
+            <field name="model_id" ref="model_test_agreement"/>
+        </record>
+    </data>
+</odoo>

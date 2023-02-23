@@ -1,0 +1,3 @@
+id,name,comment,rule_groups/id,category_id/id,implied_ids/id
+head_group_access,Head,,,,
+employee_group_access,Employee,,,,

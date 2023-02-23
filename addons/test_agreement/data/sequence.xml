@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2023 Plotnikov S.E.
+  ~ All rights reserved.
+  ~
+  -->
+
+<odoo>
+    <data>
+        <record id="test_agreement_sequence" model="ir.sequence">
+            <field name="name">Test Agreement Sequence</field>
+            <field name="code">test.agreement.sequence</field>
+            <field name="active">True</field>
+            <field name="prefix">AN/%(year)s/</field>
+            <field name="padding">6</field>
+            <field name="number_increment">1</field>
+        </record>
+    </data>
+</odoo>
+

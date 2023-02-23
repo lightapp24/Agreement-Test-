@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2023 Plotnikov S.E.
+  ~ All rights reserved.
+  ~
+  -->
+
+<odoo>
+    <data>
+        <record id="test_agreement_revision_msg" model="mail.template">
+            <field name="name">Agreement Revision Message</field>
+            <field name="model_id" ref="model_test_agreement"/>
+            <field name="subject">Sent For Revision</field>
+            <field name="body_html">&lt;p style=&quot;margin:0px;box-sizing:border-box;font-size:13px;&quot;&gt;
+Agreement &lt;t t-out=&quot;object.number or &apos;&apos;&quot; data-oe-t-inline=&quot;true&quot; contenteditable=&quot;false&quot;&gt;Number&lt;/t&gt; Sent For Revision.
+&lt;/p&gt;</field>
+            <field name="email_from">&quot;{{ object.author_id.company_id.name }}&quot; &lt;{{ (object.author_id.company_id.email or user.email) }}&gt;</field>
+            <field name="email_to">{{ object.author_id.email_formatted }}</field>
+            <field name="lang">{{ object.author_id.lang }}</field>
+            <field name="auto_delete">True</field>
+        </record>
+    </data>
+</odoo>

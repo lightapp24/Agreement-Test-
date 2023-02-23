@@ -5,3 +5,5 @@
 /addons/*
 !/addons/test_agreement/
 !.gitignore
+!task.docx
+!README.md

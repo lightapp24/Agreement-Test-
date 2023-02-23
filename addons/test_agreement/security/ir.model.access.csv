@@ -1,0 +1,5 @@
+perm_write,perm_create,perm_unlink,perm_read,name,model_id/id,id,group_id/id
+False,False,False,True,"Employee Access To Kinds Of Agreement",test_agreement.model_test_kind_agreement,employee_access_test_kind_agreement,employee_group_access
+True,True,False,True,"Head Access To Kinds Of Agreement",test_agreement.model_test_kind_agreement,head_access_test_kind_agreement,head_group_access
+True,True,False,True,"Employee Access To Agreements",test_agreement.model_test_agreement,employee_access_test_agreement,employee_group_access
+True,True,False,True,"Head Access To Agreements",test_agreement.model_test_agreement,head_access_test_agreement,head_group_access

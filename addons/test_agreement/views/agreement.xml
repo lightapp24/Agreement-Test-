@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2023 Plotnikov S.E.
+  ~ All rights reserved.
+  ~
+  -->
+
+<odoo>
+    <data>
+
+        <record id="action_agreement" model="ir.actions.act_window">
+            <field name="name">Agreement</field>
+            <field name="res_model">test.agreement</field>
+            <field name="context">{"search_default_agreement_state_search":1}</field>
+        </record>
+
+        <record id="agreement_form" model="ir.ui.view">
+            <field name="name">Agreement</field>
+            <field name="model">test.agreement</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button string="Send For Approval" name="send_for_approval"
+                                type="object" class="oe_highlight"
+                                groups="test_agreement.employee_group_access"
+                                states="draft"/>
+
+                        <button string="Approval" name="approval"
+                                type="object" class="oe_highlight"
+                                groups="test_agreement.head_group_access"
+                                states="approval"/>
+
+                        <button string="Send For Revision" name="send_for_revision"
+                                type="object" class="oe_highlight"
+                                groups="test_agreement.head_group_access"
+                                states="approval"/>
+
+                        <field name="state" widget="statusbar" statusbar_visible="draft,approval,active,completed" />
+                    </header>
+                    <sheet>
+                        <label for="number" class="oe_edit_only"/>
+                        <h1>
+                            <field name="number" required="False"/>
+                        </h1>
+                        <group>
+                            <field name="partner_id"/>
+                            <field name="kind_id"/>
+                            <field name="start_date"/>
+                            <field name="end_date"/>
+                            <field name="author_id"/>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" groups="base.group_user"/>
+                        <field name="activity_ids"/>
+                        <field name="message_ids"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="agreement_list" model="ir.ui.view">
+            <field name="name">Agreement</field>
+            <field name="model">test.agreement</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="state"/>
+                    <field name="number"/>
+                    <field name="partner_id"/>
+                    <field name="kind_id"/>
+                    <field name="start_date"/>
+                    <field name="end_date"/>
+                    <field name="author_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="agreement_search" model="ir.ui.view">
+            <field name="name">Agreement</field>
+            <field name="model">test.agreement</field>
+            <field name="arch" type="xml">
+                <search string="Search By Number">
+                    <group expand="0" string="Group By">
+                        <filter name="agreement_state_search" string="State" icon="terp-personal" domain="[]" context="{'group_by' : 'state'}"/>
+                    </group>
+                    <field name="number"/>
+                </search>
+            </field>
+        </record>
+
+        <menuitem id="menu_agreement" name="Agreement"
+                  parent="test_agreement_main_menu"
+                  action="action_agreement"/>
+
+    </data>
+</odoo>

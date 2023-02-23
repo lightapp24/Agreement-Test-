@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2023 Plotnikov S.E.
+  ~ All rights reserved.
+  ~
+  -->
+
+<odoo>
+    <data>
+
+        <menuitem sequence="0" id="test_agreement_main_menu" name="Agreements"/>
+        <menuitem id="menu_settings" name="Settings"
+                  parent="test_agreement_main_menu"
+                  groups="test_agreement.head_group_access"/>
+
+    </data>
+</odoo>

@@ -1,0 +1,2 @@
+id,name,model_id,groups,domain_force,perm_read,perm_write,perm_create,perm_unlink,active
+access_to_agreement_draft,"Access To Agreement (Draft)",test.agreement,,"[('state','in',['draft'])]",False,True,True,True,True
